@@ -5,4 +5,7 @@ return [
     'employee_dashboard' => 'لوحة تحكم الموظف',
     'welcome_manager' => 'مرحباً بك، مدير',
     'welcome_employee' => 'مرحباً بك، موظف',
+    'shipments' => 'الشحنات',
+    'tasks' => 'المهام',
+    'messages' => 'الرسائل',
 ];

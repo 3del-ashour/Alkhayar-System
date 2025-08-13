@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShipmentController;
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\MessageController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,4 +19,9 @@ Route::middleware([
             ? view('dashboard-manager')
             : view('dashboard-employee');
     })->name('dashboard');
+
+    Route::resource('shipments', ShipmentController::class)->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('tasks', TaskController::class)->only(['index', 'store', 'update', 'destroy']);
+    Route::get('messages', [MessageController::class, 'index'])->name('messages.index');
+    Route::post('messages', [MessageController::class, 'store'])->name('messages.store');
 });
