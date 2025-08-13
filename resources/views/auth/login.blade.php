@@ -16,6 +16,8 @@
             @csrf
 
             <div>
+                <x-label for="employee_id" value="الرقم التعريفي" />
+                <x-input id="employee_id" class="block mt-1 w-full" type="text" name="employee_id" :value="old('employee_id')" required autofocus autocomplete="username" />
                 <x-label for="id" value="الرقم التعريفي" />
                 <x-input id="id" class="block mt-1 w-full" type="text" name="id" :value="old('id')" required autofocus autocomplete="username" />
             </div>
