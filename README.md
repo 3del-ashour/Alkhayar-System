@@ -19,4 +19,22 @@ npm run build              # or: npm run dev (in a second terminal)
 
 php artisan cache:clear && php artisan config:clear && php artisan view:clear
 php artisan serve          # open http://127.0.0.1:8000
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+npm run build
+```
+
+Run the development server with:
+
+```
+php artisan serve
+```
+
+### Testing
+
+```
+php artisan test
 ```
