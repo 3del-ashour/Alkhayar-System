@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+mlflow
+prefect
+fastapi
+uvicorn
+imbalanced-learn
+scipy
+pydantic
+pytest
+ruff
