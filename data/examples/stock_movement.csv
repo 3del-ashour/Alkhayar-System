@@ -1,4 +1,0 @@
-MovementID,Date,FromBranchID,FromBranchName,ToBranchID,ToBranchName,ItemCode,ItemName,QuantityMoved
-1,2024-01-02,1,Main,2,East,A1,Widget,20
-2,2024-01-05,2,East,1,Main,A1,Widget,10
-3,2024-01-07,1,Main,3,North,A2,Gadget,15
